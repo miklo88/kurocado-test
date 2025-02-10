@@ -18,9 +18,11 @@ import {
 } from '@remix-run/react';
 import React from 'react';
 
-import './tailwind.css';
+// @see https://remix.run/docs/en/main/styling/tailwind
+import styles from './tailwind.css?url';
 
 export const links: LinksFunction = () => [
+  { rel: 'stylesheet', href: styles },
   {
     rel: 'icon',
     type: 'image/x-icon',
@@ -39,13 +41,8 @@ export function Layout({
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <Meta />
-        <link
-          rel='stylesheet'
-          type='text/css'
-          href='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css'
-        />
         <Links />
-        <title>Welcome to Remix</title>
+        <title>Kurocado Studio Remix starter boilerplate</title>
       </head>
       <body
         className='selection:bg-lime-200 selection:text-[#f52891cc]'
