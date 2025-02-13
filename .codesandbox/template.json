@@ -1,7 +1,7 @@
 {
   "title": "Kurocado Studio Styleguide Remix Template",
   "description": "The official Remix Template used by Kurocado Studio",
-  "iconUrl": "https://avatars.githubusercontent.com/u/148841069?s=200&v=4",
+  "iconUrl": "https://raw.githubusercontent.com/kurocado-studio/styleguide-remix-template/main/.codesandbox/icon.png",
   "tags": [
     "frontend",
     "starter",
