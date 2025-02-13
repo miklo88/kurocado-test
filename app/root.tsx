@@ -1,11 +1,3 @@
-/**
- * Made with ❤️ and adobo by Kurocado Studio
- * Copyright (c) 2024. All Rights Reserved.
- *
- * Learn more about Kurocado Studio: {@link https://www.kurocado.studio}
- *
- * Explore our open-source projects: {@link https://github.com/kurocado-studio}
- */
 /* eslint unicorn/filename-case: 0 */
 /* eslint import/no-default-export: 0 */
 import type { LinksFunction } from '@remix-run/node';
@@ -16,7 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 // @see https://remix.run/docs/en/main/styling/tailwind
 import styles from './tailwind.css?url';
@@ -35,6 +27,12 @@ export function Layout({
 }: {
   children: React.ReactNode;
 }): React.ReactNode {
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
+
   return (
     <html lang='en'>
       <head>
@@ -45,8 +43,11 @@ export function Layout({
         <title>Kurocado Studio Remix starter boilerplate</title>
       </head>
       <body
-        className='selection:bg-lime-200 selection:text-[#f52891cc]'
+        className={`selection:bg-lime-200 selection:text-[#f52891cc] ${
+          isHydrated ? 'opacity-100' : 'opacity-0'
+        } transition-opacity duration-300`}
         data-testid='root-body-test-id'
+        suppressHydrationWarning
       >
         {children}
         <ScrollRestoration />
