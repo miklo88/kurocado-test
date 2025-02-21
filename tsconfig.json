@@ -10,9 +10,6 @@
     "skipLibCheck": true,
     "rootDir": ".",
     "baseUrl": ".",
-    "paths": {
-      "~/*": ["./app/*"]
-    },
     "jsx": "react"
   },
   "include": [

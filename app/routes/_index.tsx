@@ -11,7 +11,7 @@
 import type { MetaFunction } from '@remix-run/node';
 import React from 'react';
 
-import { Welcome } from 'app/components/Welcome';
+import { Welcome } from '../components/Welcome';
 
 export const meta: MetaFunction = () => {
   return [
