@@ -18,6 +18,6 @@ export default defineConfig({
     allowedHosts: true,
   },
   optimizeDeps: {
-    exclude: ['remix:manifest'],
+    include: ['@remix-run/react'],
   },
 });
