@@ -16,6 +16,10 @@
     {
       "name": "Build",
       "command": "pnpm build"
+    },
+    {
+      "name": "Dev",
+      "command": "pnpm dev"
     }
   ],
   "tasks": {
