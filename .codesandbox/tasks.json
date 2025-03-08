@@ -7,7 +7,7 @@
     },
     {
       "name": "Typecheck",
-      "command": "tsc"
+      "command": "pnpm typecheck"
     },
     {
       "name": "Test",
