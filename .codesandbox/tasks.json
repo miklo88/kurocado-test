@@ -8,24 +8,13 @@
     {
       "name": "Typecheck",
       "command": "pnpm typecheck"
-    },
-    {
-      "name": "Test",
-      "command": "pnpm test"
-    },
-    {
-      "name": "Build",
-      "command": "pnpm build"
-    },
-    {
-      "name": "Dev",
-      "command": "pnpm dev"
     }
   ],
   "tasks": {
     "Build": {
       "name": "Build",
-      "command": "pnpm build"
+      "command": "pnpm build",
+      "runAtStart": true
     },
     "Commitlint": {
       "name": "Commitlint",
@@ -34,9 +23,7 @@
     "Dev": {
       "name": "Dev",
       "command": "pnpm dev",
-      "preview": {
-        "port": 3000
-      }
+      "runAtStart": true
     },
     "Eslint Fix": {
       "name": "Eslint Fix",
@@ -60,7 +47,8 @@
     },
     "Test": {
       "name": "Test",
-      "command": "pnpm test"
+      "command": "pnpm test",
+      "runAtStart": true
     },
     "Typecheck": {
       "name": "Typecheck",
