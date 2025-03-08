@@ -45,7 +45,7 @@ export function Layout({
       <body
         className={`selection:bg-lime-200 selection:text-[#f52891cc] ${
           isHydrated ? 'opacity-100' : 'opacity-0'
-        }  opacity-100 transition-opacity duration-300`}
+        }  transition-opacity duration-300`}
         data-testid='root-body-test-id'
         suppressHydrationWarning
       >
