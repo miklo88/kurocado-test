@@ -49,7 +49,7 @@ export function Layout({
         data-testid='root-body-test-id'
         suppressHydrationWarning
       >
-        {children}
+        {isHydrated ? children : null}
         <ScrollRestoration />
         <Scripts />
       </body>
