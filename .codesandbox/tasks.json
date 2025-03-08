@@ -11,17 +11,17 @@
     },
     {
       "name": "Test",
-      "command": "vitest run --coverage"
+      "command": "pnpm test"
     },
     {
       "name": "Build",
-      "command": "remix vite:build"
+      "command": "pnpm build"
     }
   ],
   "tasks": {
     "Build": {
       "name": "Build",
-      "command": "remix vite:build"
+      "command": "pnpm build"
     },
     "Commitlint": {
       "name": "Commitlint",
@@ -29,42 +29,42 @@
     },
     "Dev": {
       "name": "Dev",
-      "command": "remix vite:dev",
+      "command": "pnpm dev",
       "preview": {
         "port": 3000
       }
     },
     "Eslint Fix": {
       "name": "Eslint Fix",
-      "command": "eslint --max-warnings=0 . --fix --no-warn-ignored"
+      "command": "pnpm eslint-fix"
     },
     "Lint": {
       "name": "Lint",
-      "command": "eslint --max-warnings=0 . --no-warn-ignored"
+      "command": "pnpm lint"
     },
     "Prettier Check": {
       "name": "Prettier Check",
-      "command": "prettier --check ."
+      "command": "pnpm prettier-check"
     },
     "Prettier Fix": {
       "name": "Prettier Fix",
-      "command": "prettier --check . --write"
+      "command": "pnpm prettier-fix"
     },
     "Start": {
       "name": "Start",
-      "command": "remix-serve ./build/server/index.js"
+      "command": "pnpm start"
     },
     "Test": {
       "name": "Test",
-      "command": "vitest run --coverage"
+      "command": "pnpm test"
     },
     "Typecheck": {
       "name": "Typecheck",
-      "command": "tsc"
+      "command": "pnpm typecheck"
     },
     "Semantic Release": {
       "name": "Semantic Release",
-      "command": "semantic-release"
+      "command": "pnpm semantic-release"
     }
   }
 }
