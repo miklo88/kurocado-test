@@ -43,21 +43,30 @@ and quality without compromise.
    - Install dependencies. We use `pnpm,` you can install pnpm if you don't have it already
      [here](https://pnpm.io/)
 
-2. **While on the `main` branch, rename the repository**
+2. **Enable GitHub Pages**
+   - Go to Repository Settings
+     - Navigate to your GitHub repository.
+     - Click on the **Settings** tab.
+   - **Enable GitHub Pages**
+     - Scroll down to the **Pages** section in the left sidebar.
+     - Under **Build and deployment**, select **GitHub Actions** as the source.
+   - This will enable the [Documentation](https://kurocado.youtrack.cloud/articles/PLA-A-7/Document)
+     pipeline
+3. **While on the `main` branch, rename the repository**
    - Change the `styleguide-remix-template` to the application's name
      - on [package.json](./package.json)
      - on [fly.toml](./fly.toml)
-3. **Commit changes**
+4. **Commit changes**
 
    - Commit changes following [conventional commits](https://conventionalcommits.org/)
    - Amend the `Initial commit` message via
      [git commit --amend](https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History)
 
-4. **Launch your application**
+5. **Launch your application**
 
    - Run `fly launch` from inside your project source directory to configure the new application.
 
-5. Push your changes
+6. Push your changes
    - 🎉 You're Ready to Go! You've successfully set up your TypeScript project and can now take
      advantage of all the automation and tooling that Kurocado Studio provides. If you have any
      questions or need support, feel free to check out the documentation or reach out to the
