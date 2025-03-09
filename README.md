@@ -34,13 +34,12 @@ and quality without compromise.
 
 1. **Clone the repository**
 
-   - Clone the Repository using our
+   - Clone the Repository using the
      [GitHub template](https://github.com/new?template_name=styleguide-remix-template&template_owner=Kurocado-Studio).
      Note that GitHub will clone the template using `Initial commit,` the initial build will fail on
      the [Linting](https://kurocado.youtrack.cloud/articles/PLA-A-5/Lint) pipeline due to
      `Initial commit` going against [conventional commits](https://conventionalcommits.org/)
-     enforced by
-     [our CommitLint config](https://kurocado.youtrack.cloud/articles/STY-A-12/CommitLint)
+     enforced by [CommitLint config](https://kurocado.youtrack.cloud/articles/STY-A-12/CommitLint)
    - Install dependencies. We use `pnpm,` you can install pnpm if you don't have it already
      [here](https://pnpm.io/)
 
@@ -61,12 +60,13 @@ and quality without compromise.
 5. Push your changes
    - 🎉 You're Ready to Go! You've successfully set up your TypeScript project and can now take
      advantage of all the automation and tooling that Kurocado Studio provides. If you have any
-     questions or need support, feel free to check out our documentation or reach out to the
+     questions or need support, feel free to check out the documentation or reach out to the
      Kurocado Studio team.
 
 ## What's next?
 
-- Keep an eye out for our [Auth0 SDK](https://github.com/Kurocado-Studio/iam), for more information,
-  see our
+- Need a back-end template? See the
+  [NestJS template](https://github.com/Kurocado-Studio/styleguide-nests-template)
+- Keep an eye out for [Auth0 SDK](https://github.com/Kurocado-Studio/iam), for more information, see
   [Identity and Access Management page](https://kurocado.youtrack.cloud/articles/PLA-A-15/Identity-and-Access-Management),
   it will integrate your app in five minutes or less with [Auth0 by Okta](https://auth0.com/)
