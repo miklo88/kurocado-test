@@ -58,9 +58,10 @@ and quality without compromise.
      - on [fly.toml](./fly.toml)
 4. **Commit changes**
 
-   - Commit changes following [conventional commits](https://conventionalcommits.org/)
-   - Amend the `Initial commit` message via
+   - Commit changes following [conventional commits](https://conventionalcommits.org/) or amend the
+     `Initial commit` message via
      [git commit --amend](https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History)
+     - Quick Example: `refactor(config): initial config setup`
 
 5. **Launch your application**
 
